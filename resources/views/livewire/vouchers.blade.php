@@ -1,7 +1,5 @@
 <div>
-    @if(session()->has('message'))
-        <div class="alert alert-success">{{ session('message') }}</div>
-    @endif
+    @include('livewire.alert')
     <!-- Search input -->
     <div class="flex justify-center flex-1 lg:mr-32 mb-8">
         <div
